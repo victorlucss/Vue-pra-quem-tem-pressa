@@ -1,0 +1,22 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+    <h1>{{ contar }}</h1>
+    <button v-on:click="incrementar()">Adicionar um</button>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+
+        data: {
+            contar: 0
+        },
+
+        methods: {
+            incrementar(){
+                this.contar += 1
+            }
+        },
+    });
+</script>
